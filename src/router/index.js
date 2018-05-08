@@ -74,12 +74,13 @@ export default new Router({
     },
     //图片页路由
     {
-      path: '/pics',
+      path: '/pics/:id',
       component: PicsList
     },
     {
-      path: '/pics/:id',
+      path: '/pics/detail/:id',
       component: PicsDetail
     },
-  ]
+  ],
+  linkActiveClass: "mui-active"
 })

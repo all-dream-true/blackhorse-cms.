@@ -16,6 +16,11 @@ Vue.use(MintUI);
 import './assets/mui/css/mui.css';
 import './assets/mui/css/icons-extra.css';
 
+//引入vue-preview插件
+import VuePreview from 'vue-preview'; 
+// defalut install
+Vue.use(VuePreview);
+
 
 new Vue({
   el: '#app',

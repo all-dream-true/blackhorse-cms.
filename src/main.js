@@ -21,9 +21,12 @@ import VuePreview from 'vue-preview';
 // defalut install
 Vue.use(VuePreview);
 
+// import store from "./store";
+
 
 new Vue({
   el: '#app',
   router,
-  render: h => h(App)
+  render: h => h(App),
+  // store
 })

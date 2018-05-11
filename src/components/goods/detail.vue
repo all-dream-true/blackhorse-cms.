@@ -105,6 +105,17 @@ export default {
     },
     addToCart() {
      this.isShowBall = true;
+     //将当前商品的id和数量往vuex的购物车信息中存储一份
+    //  var result ={
+    //    id: this.$route.params.id,
+    //    count: this.count
+    //  }console.log(result);
+      // console.log(result);
+      this.$store.commit( "addToCarts", {
+       id: this.$route.params.id,
+       count: this.count
+     })
+     
     }
   },
   filters: {

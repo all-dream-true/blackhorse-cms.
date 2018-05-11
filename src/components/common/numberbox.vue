@@ -21,7 +21,7 @@ export default {
       }
     },
     plus() {
-      if (this.num <= this.min + this.step) {
+      if (this.num <= this.max + this.step) {
         this.num += this.step;
         this.$emit("input", this.num);
       }
@@ -29,7 +29,7 @@ export default {
   },
   watch: {
     value: {
-      handler(nv, ov) {
+      handler: function(nv, ov) {
         this.num = nv;
         // console.log(nv);
       },
@@ -134,5 +134,3 @@ export default {
 }
 
 </style>
-
-
